@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Care4Pets.Api.Models
+namespace Care4Pets.Api.Bol
 {
     public class MedicationModel
     {
