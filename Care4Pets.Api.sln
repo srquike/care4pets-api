@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Tests", "Care
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Dal", "Care4Pets.Api.Dal\Care4Pets.Api.Dal.csproj", "{2E6413B7-A675-4B64-A708-D7E66611E0C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Bll", "Care4Pets.Api.Bll\Care4Pets.Api.Bll.csproj", "{B59FCA6F-96F3-4000-A659-6DBFDD13112D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2E6413B7-A675-4B64-A708-D7E66611E0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E6413B7-A675-4B64-A708-D7E66611E0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E6413B7-A675-4B64-A708-D7E66611E0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B59FCA6F-96F3-4000-A659-6DBFDD13112D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59FCA6F-96F3-4000-A659-6DBFDD13112D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59FCA6F-96F3-4000-A659-6DBFDD13112D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59FCA6F-96F3-4000-A659-6DBFDD13112D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
