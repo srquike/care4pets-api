@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Care4Pets.Api.Bol
 {
-    public class PetModel
+    public class Pet
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
