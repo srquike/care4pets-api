@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Care4Pets.Api.Bol
 {
-    public class RemiderType
+    public class ReminderType
     {
         public int Id { get; set; }
         public string Name { get; set; }

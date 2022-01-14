@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Care4PetsDbContext.cs" />
+    <Compile Include="Migrations\202201141737559_Initial.cs" />
+    <Compile Include="Migrations\202201141737559_Initial.designer.cs">
+      <DependentUpon>202201141737559_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +68,11 @@
       <Project>{2f21a774-9de0-4bda-b17a-64d05ca274d2}</Project>
       <Name>Care4Pets.Api.Bol</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202201141737559_Initial.resx">
+      <DependentUpon>202201141737559_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

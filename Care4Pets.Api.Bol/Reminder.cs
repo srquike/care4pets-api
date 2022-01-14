@@ -17,7 +17,7 @@ namespace Care4Pets.Api.Bol
         public RepeatType RepeatType { get; set; }
 
         public int? ReminderTypeId { get; set; }
-        public RemiderType RemiderType { get; set; }
+        public ReminderType RemiderType { get; set; }
 
         public Guid? EventId { get; set; }
         public Event Event { get; set; }

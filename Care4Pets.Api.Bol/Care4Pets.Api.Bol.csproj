@@ -57,7 +57,7 @@
     <Compile Include="Profession.cs" />
     <Compile Include="Professional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemiderType.cs" />
+    <Compile Include="ReminderType.cs" />
     <Compile Include="Reminder.cs" />
     <Compile Include="RepeatType.cs" />
   </ItemGroup>
