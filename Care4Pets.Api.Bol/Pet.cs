@@ -17,5 +17,7 @@ namespace Care4Pets.Api.Bol
         public bool Sterilized { get; set; }
         public DateTime? DateOfSterilization { get; set; }
         public string Notes { get; set; }
+
+        public ICollection<Prescription> Prescriptions { get; set; }
     }
 }
