@@ -11,7 +11,7 @@ namespace Care4Pets.Api.Dal
     {
         public Care4PetsDbContext() : base("name=Care4PetsDbConnectionString")
         {
-
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Care4PetsDbContext>());
         }
     }
 }
