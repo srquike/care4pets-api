@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Bll", "Care4P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Bol", "Care4Pets.Api.Bol\Care4Pets.Api.Bol.csproj", "{2F21A774-9DE0-4BDA-B17A-64D05CA274D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Care4Pets.Api.Repositories", "Care4Pets.Api.Repositories\Care4Pets.Api.Repositories.csproj", "{7667B473-C3C8-4A00-8019-EA7C20CD32D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2F21A774-9DE0-4BDA-B17A-64D05CA274D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F21A774-9DE0-4BDA-B17A-64D05CA274D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F21A774-9DE0-4BDA-B17A-64D05CA274D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7667B473-C3C8-4A00-8019-EA7C20CD32D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7667B473-C3C8-4A00-8019-EA7C20CD32D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7667B473-C3C8-4A00-8019-EA7C20CD32D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7667B473-C3C8-4A00-8019-EA7C20CD32D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
