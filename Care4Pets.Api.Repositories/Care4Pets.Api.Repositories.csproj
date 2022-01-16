@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>7667b473-c3c8-4a00-8019-ea7c20cd32d3</ProjectGuid>
+    <ProjectGuid>{7667B473-C3C8-4A00-8019-EA7C20CD32D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Care4Pets.Api.Repositories</RootNamespace>
@@ -31,24 +31,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IAdministrationWayRepository.cs" />
+    <Compile Include="IEventRepository.cs" />
+    <Compile Include="IEventTypeRepository.cs" />
+    <Compile Include="IFeedingRepository.cs" />
+    <Compile Include="IFoodPresentationRepository.cs" />
+    <Compile Include="IFoodRepository.cs" />
+    <Compile Include="IFoodTypeRepository.cs" />
+    <Compile Include="IMedicationPresentationRepository.cs" />
+    <Compile Include="IMedicationRepository.cs" />
+    <Compile Include="INotificationTypesRepository.cs" />
+    <Compile Include="IPetRepository.cs" />
+    <Compile Include="IPrescriptionRepository.cs" />
+    <Compile Include="IProfessionalRepository.cs" />
+    <Compile Include="IProfessionRepository.cs" />
+    <Compile Include="IReminderRepository.cs" />
+    <Compile Include="IReminderTypeRepository.cs" />
+    <Compile Include="IRepeatTypeRepository.cs" />
+    <Compile Include="ISpeciesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Care4Pets.Api.Bol\Care4Pets.Api.Bol.csproj">
+      <Project>{2f21a774-9de0-4bda-b17a-64d05ca274d2}</Project>
+      <Name>Care4Pets.Api.Bol</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

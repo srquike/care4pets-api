@@ -56,6 +56,10 @@
     <Compile Include="Migrations\202201141737559_Initial.designer.cs">
       <DependentUpon>202201141737559_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201160311181_AddTableSpecies.cs" />
+    <Compile Include="Migrations\202201160311181_AddTableSpecies.designer.cs">
+      <DependentUpon>202201160311181_AddTableSpecies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,10 +72,17 @@
       <Project>{2f21a774-9de0-4bda-b17a-64d05ca274d2}</Project>
       <Name>Care4Pets.Api.Bol</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Care4Pets.Api.Repositories\Care4Pets.Api.Repositories.csproj">
+      <Project>{7667b473-c3c8-4a00-8019-ea7c20cd32d3}</Project>
+      <Name>Care4Pets.Api.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202201141737559_Initial.resx">
       <DependentUpon>202201141737559_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201160311181_AddTableSpecies.resx">
+      <DependentUpon>202201160311181_AddTableSpecies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

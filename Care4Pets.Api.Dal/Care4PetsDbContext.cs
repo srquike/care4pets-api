@@ -27,7 +27,7 @@ namespace Care4Pets.Api.Dal
         public DbSet<Medication> Medications { get; set; }
         public DbSet<MedicationPresentation> MedicationPresentations { get; set; }
         public DbSet<NotificationType> NotificationTypes { get; set; }
-        public DbSet<PetType> PetTypes { get; set; }
+        public DbSet<Species> Species { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Profession> Professions { get; set; }
         public DbSet<Professional> Professionals { get; set; }

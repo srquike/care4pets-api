@@ -52,7 +52,6 @@
     <Compile Include="MedicationPresentation.cs" />
     <Compile Include="NotificationType.cs" />
     <Compile Include="Pet.cs" />
-    <Compile Include="PetType.cs" />
     <Compile Include="Prescription.cs" />
     <Compile Include="Profession.cs" />
     <Compile Include="Professional.cs" />
@@ -60,6 +59,7 @@
     <Compile Include="ReminderType.cs" />
     <Compile Include="Reminder.cs" />
     <Compile Include="RepeatType.cs" />
+    <Compile Include="Species.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

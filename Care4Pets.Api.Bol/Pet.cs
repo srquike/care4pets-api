@@ -11,13 +11,15 @@ namespace Care4Pets.Api.Bol
         public string Name { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public string Breed { get; set; }
-        public string Specie { get; set; }
         public string Gender { get; set; }
         public string Appearance { get; set; }
         public bool Sterilized { get; set; }
         public DateTime? DateOfSterilization { get; set; }
         public string Notes { get; set; }
 
-        public ICollection<Prescription> Prescriptions { get; set; }
+        public int? SpeciesId { get; private set; }
+        public virtual Species Species { get; set; }
+
+        public virtual ICollection<Prescription> Prescriptions { get; set; }
     }
 }

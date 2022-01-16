@@ -24,9 +24,9 @@ namespace Care4Pets.Api.Bol
         public int? FoodPresentationId { get; set; }
         public FoodPresentation FoodPresentation { get; set; }
 
-        public int? PetTypeId { get; set; }
-        public PetType PetType { get; set; }
+        public int? SpeciesId { get; set; }
+        public virtual Species Species { get; set; }
 
-        public ICollection<Feeding> Feedings { get; set; }
+        public virtual ICollection<Feeding> Feedings { get; set; }
     }
 }
