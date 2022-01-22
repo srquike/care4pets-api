@@ -43,5 +43,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Care4Pets.Api.Bol\Care4Pets.Api.Bol.csproj">
+      <Project>{2f21a774-9de0-4bda-b17a-64d05ca274d2}</Project>
+      <Name>Care4Pets.Api.Bol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Care4Pets.Api.Dal\Care4Pets.Api.Dal.csproj">
+      <Project>{2e6413b7-a675-4b64-a708-d7e66611e0c5}</Project>
+      <Name>Care4Pets.Api.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
