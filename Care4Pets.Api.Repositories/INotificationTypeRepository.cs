@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Care4Pets.Api.Repositories
 {
-    public interface INotificationTypesRepository
+    public interface INotificationTypeRepository
     {
-        IEnumerable<NotificationType> GetNotificationTypes();
-        NotificationType GetNotificationTypeById(int id);
+        Task<IEnumerable<NotificationType>> GetNotificationTypes();
+        Task<NotificationType> GetNotificationTypeById(int id);
     }
 }

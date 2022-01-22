@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IFeedingRepository
     {
-        IEnumerable<Feeding> GetFeedings();
-        Feeding GetFeedingById(Guid id);
-        void InsertFeeding(Feeding feeding);
-        void DeleteFeeding(Guid id);
-        void UpdateFeeding(Feeding feeding);
-        void Save();
+        Task<IEnumerable<Feeding>> GetFeedings();
+        Task<Feeding> GetFeedingById(Guid id);
+        Task<int> InsertFeeding(Feeding feeding);
+        Task<int> DeleteFeeding(Guid id);
+        Task<int> UpdateFeeding(Feeding feeding);
+        Task<int> Save();
     }
 }

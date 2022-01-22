@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IAdministrationWayRepository
     {
-        IEnumerable<AdministrationWay> GetAdministrationWays();
-        AdministrationWay GetAdministrationWayById(Guid id);
-        void InsertAdministrationWay(AdministrationWay administrationWay);
-        void DeleteAdministrationWay(Guid id);
-        void UpdateAdministrationWay(AdministrationWay administrationWay);
-        void Save();
+        Task<IEnumerable<AdministrationWay>> GetAdministrationWays();
+        Task<AdministrationWay> GetAdministrationWayById(Guid id);
+        Task<int> InsertAdministrationWay(AdministrationWay administrationWay);
+        Task<int> DeleteAdministrationWay(Guid id);
+        Task<int> UpdateAdministrationWay(AdministrationWay administrationWay);
+        Task<int> Save();
     }
 }

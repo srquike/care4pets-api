@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IEventTypeRepository
     {
-        IEnumerable<EventType> GetEventTypes();
-        EventType GetEventTypeById(int id);
-        void InsertEventType(EventType eventType);
-        void DeleteEventType(int id);
-        void UpdateEventType(EventType eventType);
-        void Save();
+        Task<IEnumerable<EventType>> GetEventTypes();
+        Task<EventType> GetEventTypeById(int id);
+        Task<int> InsertEventType(EventType eventType);
+        Task<int> DeleteEventType(int id);
+        Task<int> UpdateEventType(EventType eventType);
+        Task<int> Save();
     }
 }

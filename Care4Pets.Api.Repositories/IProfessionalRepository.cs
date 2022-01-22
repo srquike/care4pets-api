@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IProfessionalRepository
     {
-        IEnumerable<Professional> GetProfessionals();
-        Profession GetProfessionById(Guid id);
-        void InsertProfessional(Professional professional);
-        void DeleteProfessional(Guid id);
-        void UpdateProfessional(Professional professional);
-        void Save();
+        Task<IEnumerable<Professional>> GetProfessionals();
+        Task<Professional> GetProfessionalById(Guid id);
+        Task<int> InsertProfessional(Professional professional);
+        Task<int> DeleteProfessional(Guid id);
+        Task<int> UpdateProfessional(Professional professional);
+        Task<int> Save();
     }
 }

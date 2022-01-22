@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IPetRepository
     {
-        IEnumerable<Pet> GetPets();
-        Pet GetPetById(Guid id);
-        void InsertPet(Pet pet);
-        void DeletePet(Guid id);
-        void UpdatePet(Pet pet);
-        void Save();
+        Task<IEnumerable<Pet>> GetPets();
+        Task<Pet> GetPetById(Guid id);
+        Task<int> InsertPet(Pet pet);
+        Task<int> DeletePet(Guid id);
+        Task<int> UpdatePet(Pet pet);
+        Task<int> Save();
     }
 }

@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IRepeatTypeRepository
     {
-        IEnumerable<RepeatType> GetRepeatTypes();
-        RepeatType GetRepeatTypeById(int id);
-        void InsertRepeatType(RepeatType repeatType);
-        void DeleteRepeatType(int id);
-        void UpdateRepeatType(RepeatType repeatType);
-        void Save();
+        Task<IEnumerable<RepeatType>> GetRepeatTypes();
+        Task<RepeatType> GetRepeatTypeById(int id);
+        Task<int> InsertRepeatType(RepeatType repeatType);
+        Task<int> DeleteRepeatType(int id);
+        Task<int> UpdateRepeatType(RepeatType repeatType);
+        Task<int> Save();
     }
 }

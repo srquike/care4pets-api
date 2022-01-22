@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Care4Pets.Api.Repositories
 {
-    interface IReminderTypeRepository
+    public interface IReminderTypeRepository
     {
-        IEnumerable<ReminderType> GetReminderTypes();
-        ReminderType GetReminderTypeById(int id);
-        void InsertReminderType(ReminderType reminderType);
-        void DeleteReminderType(int id);
-        void UpdateReminderType(ReminderType reminderType);
-        void Save();
+        Task<IEnumerable<ReminderType>> GetReminderTypes();
+        Task<ReminderType> GetReminderTypeById(int id);
+        Task<int> InsertReminderType(ReminderType reminderType);
+        Task<int> DeleteReminderType(int id);
+        Task<int> UpdateReminderType(ReminderType reminderType);
+        Task<int> Save();
     }
 }

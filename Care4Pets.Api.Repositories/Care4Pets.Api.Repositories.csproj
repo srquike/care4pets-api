@@ -50,7 +50,7 @@
     <Compile Include="IFoodTypeRepository.cs" />
     <Compile Include="IMedicationPresentationRepository.cs" />
     <Compile Include="IMedicationRepository.cs" />
-    <Compile Include="INotificationTypesRepository.cs" />
+    <Compile Include="INotificationTypeRepository.cs" />
     <Compile Include="IPetRepository.cs" />
     <Compile Include="IPrescriptionRepository.cs" />
     <Compile Include="IProfessionalRepository.cs" />

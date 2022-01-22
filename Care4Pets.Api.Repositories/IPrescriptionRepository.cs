@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IPrescriptionRepository
     {
-        IEnumerable<Prescription> GetPrescriptions();
-        Prescription GetPrescriptionById(Guid id);
-        void InsertPrescription(Prescription prescription);
-        void DeletePrescription(Guid id);
-        void UpdatePrescription(Prescription prescription);
-        void Save();
+        Task<IEnumerable<Prescription>> GetPrescriptions();
+        Task<Prescription> GetPrescriptionById(Guid id);
+        Task<int> InsertPrescription(Prescription prescription);
+        Task<int> DeletePrescription(Guid id);
+        Task<int> UpdatePrescription(Prescription prescription);
+        Task<int> Save();
     }
 }

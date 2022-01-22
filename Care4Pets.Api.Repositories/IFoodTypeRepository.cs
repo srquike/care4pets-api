@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IFoodTypeRepository
     {
-        IEnumerable<FoodType> GetFoodTypes();
-        FoodType GetFoodTypeById(int id);
-        void InsertFoodType(FoodType foodType);
-        void DeleteFoodTyoe(int id);
-        void UpdateFoodType(FoodType foodType);
-        void Save();
+        Task<IEnumerable<FoodType>> GetFoodTypes();
+        Task<FoodType> GetFoodTypeById(int id);
+        Task<int> InsertFoodType(FoodType foodType);
+        Task<int> DeleteFoodTyoe(int id);
+        Task<int> UpdateFoodType(FoodType foodType);
+        Task<int> Save();
     }
 }

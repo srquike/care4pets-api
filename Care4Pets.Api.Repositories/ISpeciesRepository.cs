@@ -9,9 +9,9 @@ namespace Care4Pets.Api.Repositories
 {
     public interface ISpeciesRepository
     {
-        IEnumerable<Species> GetSpecies();
-        Species GetSpeciesById();
-        void InsertSpecie(Species species);
-        void Save();
+        Task<IEnumerable<Species>> GetSpecies();
+        Task<Species> GetSpeciesById(int id);
+        Task<int> InsertSpecie(Species species);
+        Task<int> Save();
     }
 }

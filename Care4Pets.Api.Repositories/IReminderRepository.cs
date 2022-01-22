@@ -9,11 +9,11 @@ namespace Care4Pets.Api.Repositories
 {
     public interface IReminderRepository
     {
-        IEnumerable<Reminder> GetReminders();
-        Reminder GetReminderById(Guid id);
-        void InsertReminder(Reminder reminder);
-        void DeleteReminder(Guid id);
-        void UpdateReminder(Reminder reminder);
-        void Save();
+        Task<IEnumerable<Reminder>> GetReminders();
+        Task<Reminder> GetReminderById(Guid id);
+        Task<int> InsertReminder(Reminder reminder);
+        Task<int> DeleteReminder(Guid id);
+        Task<int> UpdateReminder(Reminder reminder);
+        Task<int> Save();
     }
 }
