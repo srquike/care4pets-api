@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministrationWayBLL.cs" />
+    <Compile Include="EventBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +53,10 @@
     <ProjectReference Include="..\Care4Pets.Api.Dal\Care4Pets.Api.Dal.csproj">
       <Project>{2e6413b7-a675-4b64-a708-d7e66611e0c5}</Project>
       <Name>Care4Pets.Api.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Care4Pets.Api.Repositories\Care4Pets.Api.Repositories.csproj">
+      <Project>{7667b473-c3c8-4a00-8019-ea7c20cd32d3}</Project>
+      <Name>Care4Pets.Api.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
