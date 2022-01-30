@@ -42,25 +42,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\AdministrationWay.cs" />
-    <Compile Include="Entities\Event.cs" />
-    <Compile Include="Entities\EventType.cs" />
-    <Compile Include="Entities\Feeding.cs" />
-    <Compile Include="Entities\Food.cs" />
-    <Compile Include="Entities\FoodPresentation.cs" />
-    <Compile Include="Entities\FoodType.cs" />
-    <Compile Include="Entities\Medication.cs" />
-    <Compile Include="Entities\MedicationPresentation.cs" />
-    <Compile Include="Entities\NotificationType.cs" />
-    <Compile Include="Entities\Pet.cs" />
-    <Compile Include="Entities\Prescription.cs" />
-    <Compile Include="Entities\Profession.cs" />
-    <Compile Include="Entities\Professional.cs" />
+    <Compile Include="DTOs\MedicationDTO.cs" />
+    <Compile Include="Entities\AdministrationWay.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Event.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\EventType.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Feeding.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Food.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\FoodPresentation.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\FoodType.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Medication.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\MedicationPresentation.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\NotificationType.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Pet.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Prescription.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Profession.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Professional.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\ReminderType.cs" />
-    <Compile Include="Entities\Reminder.cs" />
-    <Compile Include="Entities\RepeatType.cs" />
-    <Compile Include="Entities\Species.cs" />
+    <Compile Include="Entities\ReminderType.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Reminder.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\RepeatType.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
+    <Compile Include="Entities\Species.cs">
+      <CustomToolNamespace>Care4Pets.Api.Bol.Entities</CustomToolNamespace>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
